@@ -1,0 +1,4 @@
+/* line 1, app/assets/stylesheets/home.scss */
+body {
+  background: url(/background.png) no-repeat 0 0/cover;
+}
