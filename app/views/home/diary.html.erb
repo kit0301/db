@@ -1,0 +1,10 @@
+<%= stylesheet_link_tag "write", :media => "all" %>
+<body>
+  <div class="book">
+    <%= image_tag 'book.png', class: 'hoge' %>
+  </div>
+  <p>
+    <%= @final.content%><br>
+    <%= @final.created_at %>
+  </p>
+</body>

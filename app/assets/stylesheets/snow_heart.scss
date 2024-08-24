@@ -1,0 +1,97 @@
+body {
+  background: url(/home.jpg) no-repeat 0 0 / cover;
+}
+.serifu {
+  text-align: right;
+  padding-left: 15%;
+  position: relative;
+  height: 350px;
+}
+
+.serifu .fukidashi {
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 800px;
+  height: 500px;
+  border-radius: 25px;
+}
+
+.serifu .comment {
+  position: absolute;
+  z-index: 2;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.icons {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+}
+
+.pi {
+  margin-right: 20px; /* piとpicture3の間に余白を設定 */
+}
+
+.pi img {
+  border-radius: 100px;
+  display: block;
+  height: 450px; /* 画像サイズを指定 */
+  width: 350px; /* 画像サイズを指定 */
+}
+
+.picture3 img {
+  margin-left: 10px;
+  border-radius: 10px;
+  height: 200px; /* 画像サイズを指定 */
+  width: 200px; /* 画像サイズを指定 */
+}
+
+.comment-no-nakami {
+  font-size: 84px;
+  font-weight: bold;
+  animation: rainbow-animation 3s infinite, blink-animation 0.3s steps(5, start) infinite;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+}
+
+@keyframes rainbow-animation {
+  0% { background-position: 0%; }
+  100% { background-position: 100%; }
+}
+
+@keyframes blink-animation {
+  to {
+      visibility: hidden;
+  }
+}
+
+.back-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s;
+}
+
+.back-button:hover {
+  background-color: #45a049;
+}

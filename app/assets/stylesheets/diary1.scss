@@ -1,0 +1,44 @@
+body {
+  background: url(/home.jpg) no-repeat 0 0 / cover;
+}
+.picture1{
+  text-align: left;
+  padding-left: 15%;
+}
+.picture1 img{
+  height: 350px;
+  
+}
+.picture2{
+  float: right;
+  position: absolute;
+  margin-top: -10%;
+}
+.picture2 img{
+  height: 300px;
+}
+.picture3 img{
+  height: 250px;
+  float: right;
+  margin-left: 5%;
+  margin-top: 5%;
+
+}
+
+.back-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s;
+}
+
+.back-button:hover {
+  background-color: #45a049;
+}
